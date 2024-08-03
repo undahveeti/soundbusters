@@ -14,6 +14,7 @@
 		9F67C1182C5EEECF00EB0426 /* frontendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1172C5EEECF00EB0426 /* frontendTests.swift */; };
 		9F67C1222C5EEECF00EB0426 /* frontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1212C5EEECF00EB0426 /* frontendUITests.swift */; };
 		9F67C1242C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1232C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift */; };
+		9F67C1312C5EEF4C00EB0426 /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1302C5EEF4C00EB0426 /* mainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9F67C11D2C5EEECF00EB0426 /* frontendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frontendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F67C1212C5EEECF00EB0426 /* frontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendUITests.swift; sourceTree = "<group>"; };
 		9F67C1232C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F67C1302C5EEF4C00EB0426 /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				9F67C1082C5EEECE00EB0426 /* ContentView.swift */,
 				9F67C10A2C5EEECF00EB0426 /* Assets.xcassets */,
 				9F67C10C2C5EEECF00EB0426 /* Preview Content */,
+				9F67C1302C5EEF4C00EB0426 /* mainScreen.swift */,
 			);
 			path = frontend;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F67C1092C5EEECE00EB0426 /* ContentView.swift in Sources */,
+				9F67C1312C5EEF4C00EB0426 /* mainScreen.swift in Sources */,
 				9F67C1072C5EEECE00EB0426 /* frontendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

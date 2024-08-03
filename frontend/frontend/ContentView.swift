@@ -54,7 +54,7 @@ struct ContentView: View {
                     .background(Color.purple)
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: Text("You are logged in as @\(username)"), isActive: $showingLoginScreen){
+                    NavigationLink(destination: LoginScreen(username: username), isActive: $showingLoginScreen){
                         EmptyView()
                     }
                     
