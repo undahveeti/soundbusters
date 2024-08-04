@@ -5,12 +5,7 @@ const path = require('path');
 
 const router = express.Router();
 
-const connection = mysql.createConnection({
-	host     : 'localhost',
-	user     : 'root',
-	password : 'georgerusty123',
-	database : 'login'
-});
+var connection = require('./connection');
 
 // user login
 router.post('/login', function(request, response) {
@@ -20,7 +15,7 @@ router.post('/login', function(request, response) {
 	// Ensure the input fields exists and are not empty
 	if (username && password) {
 		// Execute SQL query that'll select the account from the database based on the specified username and password
-		connection.query('SELECT * FROM users WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
+		connection.query('SELECT * FROM user WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
 			// If there is an issue with the query, output the error
 			if (error) throw error;
 			// If the account exists
@@ -28,6 +23,7 @@ router.post('/login', function(request, response) {
 				// Authenticate the user
 				request.session.loggedin = true;
 				request.session.username = username;
+				console.log(id);
 				// Redirect to home page
 				response.redirect('/home');
 			} else {
@@ -56,7 +52,7 @@ router.post('/register', function(request, response) {
             password: password
         };
 
-        connection.query('INSERT INTO users SET ?', user, (err, result) => {
+        connection.query('INSERT INTO user SET ?', user, (err, result) => {
             if (err) {
                 // Database query error
                 response.status(500).send(`Registration failed: ${err.message}`);

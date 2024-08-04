@@ -4,13 +4,7 @@ const session = require('express-session');
 const path = require('path');
 const expressValidator = require('express-validator');
 const flash = require('express-flash');
-
-const connection = mysql.createConnection({
-	host     : 'localhost',
-	user     : 'root',
-	password : 'georgerusty123',
-	database : 'login'
-});
+require("dotenv").config();
 
 const app = express();
 
@@ -33,7 +27,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 const loginRouter = require('./routes/login.js');
+const followRouter = require('./routes/follower.js');
 app.use('/', loginRouter);
+app.use('/', followRouter);
 
 // http://localhost:3000/
 app.get('/', function(request, response) {
