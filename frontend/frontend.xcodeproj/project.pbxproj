@@ -14,7 +14,10 @@
 		9F67C1182C5EEECF00EB0426 /* frontendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1172C5EEECF00EB0426 /* frontendTests.swift */; };
 		9F67C1222C5EEECF00EB0426 /* frontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1212C5EEECF00EB0426 /* frontendUITests.swift */; };
 		9F67C1242C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1232C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift */; };
-		9F67C1312C5EEF4C00EB0426 /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1302C5EEF4C00EB0426 /* mainScreen.swift */; };
+		9F67C1782C5F20EB00EB0426 /* welcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1772C5F20EB00EB0426 /* welcomeScreen.swift */; };
+		9F67C1832C5F29AC00EB0426 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1822C5F29AC00EB0426 /* SignInScreen.swift */; };
+		9F67C1852C5F2B1F00EB0426 /* loginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1842C5F2B1F00EB0426 /* loginScreen.swift */; };
+		9F67C1872C5F30FE00EB0426 /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1862C5F30FE00EB0426 /* mainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +48,10 @@
 		9F67C11D2C5EEECF00EB0426 /* frontendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frontendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F67C1212C5EEECF00EB0426 /* frontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendUITests.swift; sourceTree = "<group>"; };
 		9F67C1232C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9F67C1302C5EEF4C00EB0426 /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
+		9F67C1772C5F20EB00EB0426 /* welcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeScreen.swift; sourceTree = "<group>"; };
+		9F67C1822C5F29AC00EB0426 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		9F67C1842C5F2B1F00EB0426 /* loginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginScreen.swift; sourceTree = "<group>"; };
+		9F67C1862C5F30FE00EB0426 /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +102,11 @@
 		9F67C1052C5EEECE00EB0426 /* frontend */ = {
 			isa = PBXGroup;
 			children = (
+				9F67C1762C5F20D200EB0426 /* Screens */,
 				9F67C1062C5EEECE00EB0426 /* frontendApp.swift */,
 				9F67C1082C5EEECE00EB0426 /* ContentView.swift */,
 				9F67C10A2C5EEECF00EB0426 /* Assets.xcassets */,
 				9F67C10C2C5EEECF00EB0426 /* Preview Content */,
-				9F67C1302C5EEF4C00EB0426 /* mainScreen.swift */,
 			);
 			path = frontend;
 			sourceTree = "<group>";
@@ -128,6 +134,17 @@
 				9F67C1232C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift */,
 			);
 			path = frontendUITests;
+			sourceTree = "<group>";
+		};
+		9F67C1762C5F20D200EB0426 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9F67C1772C5F20EB00EB0426 /* welcomeScreen.swift */,
+				9F67C1822C5F29AC00EB0426 /* SignInScreen.swift */,
+				9F67C1842C5F2B1F00EB0426 /* loginScreen.swift */,
+				9F67C1862C5F30FE00EB0426 /* mainScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F67C1092C5EEECE00EB0426 /* ContentView.swift in Sources */,
-				9F67C1312C5EEF4C00EB0426 /* mainScreen.swift in Sources */,
+				9F67C1832C5F29AC00EB0426 /* SignInScreen.swift in Sources */,
+				9F67C1852C5F2B1F00EB0426 /* loginScreen.swift in Sources */,
+				9F67C1782C5F20EB00EB0426 /* welcomeScreen.swift in Sources */,
+				9F67C1872C5F30FE00EB0426 /* mainScreen.swift in Sources */,
 				9F67C1072C5EEECE00EB0426 /* frontendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
