@@ -25,7 +25,6 @@ app.set('view engine', 'ejs');
 // Set up the views directory if not using default
 app.set('views', path.join(__dirname, 'views'));
 
-
 const loginRouter = require('./routes/login.js');
 const followRouter = require('./routes/follower.js');
 app.use('/', loginRouter);
@@ -51,4 +50,5 @@ app.get('/home', function(request, response) {
 	response.end();
 });
 
-app.listen(3000);
+// app.listen(3000);
+module.exports = app;

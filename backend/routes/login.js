@@ -1,11 +1,12 @@
-const mysql = require('mysql2');
 const express = require('express');
-const session = require('express-session');
-const path = require('path');
 
 const router = express.Router();
 
 var connection = require('./connection');
+
+router.post('/test', function(request,response){
+	response.sendStatus(200);
+})
 
 // user login
 router.post('/login', function(request, response) {
@@ -23,18 +24,19 @@ router.post('/login', function(request, response) {
 				// Authenticate the user
 				request.session.loggedin = true;
 				request.session.username = username;
-				console.log(id);
 				// Redirect to home page
-				response.redirect('/home');
+				//response.redirect('/home');
+				// Send a success response
+				response.status(200).send('Logged in');
 			} else {
-				response.send('Incorrect Username and/or Password!');
-			}			
-			response.end();
+				// Incorrect username or password
+				response.status(401).send('Incorrect Username and/or Password!');
+			}
 		});
-	} else {
-		response.send('Please enter Username and Password!');
-		response.end();
-	}
+    } else {
+        // Missing fields
+        response.status(400).send('Please enter Username and Password!');
+    }
 });
 
 
@@ -52,20 +54,18 @@ router.post('/register', function(request, response) {
             password: password
         };
 
-        connection.query('INSERT INTO user SET ?', user, (err, result) => {
+		connection.query('INSERT INTO user SET ?', user, (err) => {
             if (err) {
-                // Database query error
+                // Handle database query error
                 response.status(500).send(`Registration failed: ${err.message}`);
-            } else {
-                // Registration successful
-                response.status(201).send('Registration successful! You can now log in.');
             }
+            // Registration successful
+            response.status(201).send('Registration successful! You can now log in.');
         });
-
-	} else {
-		response.send('Please enter Email, Username, and Password!');
-		response.end();
-	}
+    } else {
+        // Missing fields
+        response.status(400).send('Please enter Email, Username, and Password!');
+    }
 });
 
 
