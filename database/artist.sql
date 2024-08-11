@@ -10,5 +10,4 @@ CREATE TABLE IF NOT EXISTS `artist` (
   `popularity` SMALLINT,
 
   PRIMARY KEY (`id`),
-
 )

@@ -15,7 +15,6 @@ router.post('/follow', function(request, response) {
         user: user,
         follower: follower
     };
-    console.log(entry)
     connection.query('INSERT INTO follower SET ?', entry, (err, result) => {
         if (err) {
             // Database query error
