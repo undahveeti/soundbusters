@@ -50,5 +50,5 @@ app.get('/home', function(request, response) {
 	response.end();
 });
 
-// app.listen(3000);
-module.exports = app;
+app.listen(3000);
+// module.exports = app;
