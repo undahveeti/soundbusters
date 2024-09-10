@@ -19,6 +19,11 @@
 		9F67C1222C5EEECF00EB0426 /* frontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1212C5EEECF00EB0426 /* frontendUITests.swift */; };
 		9F67C1242C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1232C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift */; };
 		9F67C1312C5EEF4C00EB0426 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F67C1302C5EEF4C00EB0426 /* LoginScreen.swift */; };
+		9F7665C52C8FE6B50069EEC7 /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7665C42C8FE6B50069EEC7 /* SongsView.swift */; };
+		9F7665C72C8FE7D00069EEC7 /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7665C62C8FE7D00069EEC7 /* AlbumsView.swift */; };
+		9F7665C92C8FE7DE0069EEC7 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7665C82C8FE7DE0069EEC7 /* ListsView.swift */; };
+		9F7665CB2C8FE7EF0069EEC7 /* MembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7665CA2C8FE7EF0069EEC7 /* MembersView.swift */; };
+		9F7665CD2C8FFF230069EEC7 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7665CC2C8FFF230069EEC7 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		9F67C1212C5EEECF00EB0426 /* frontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendUITests.swift; sourceTree = "<group>"; };
 		9F67C1232C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F67C1302C5EEF4C00EB0426 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		9F7665C42C8FE6B50069EEC7 /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		9F7665C62C8FE7D00069EEC7 /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
+		9F7665C82C8FE7DE0069EEC7 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
+		9F7665CA2C8FE7EF0069EEC7 /* MembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersView.swift; sourceTree = "<group>"; };
+		9F7665CC2C8FFF230069EEC7 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,7 @@
 		9F67C1052C5EEECE00EB0426 /* frontend */ = {
 			isa = PBXGroup;
 			children = (
+				9F7665C32C8FE6A20069EEC7 /* navTabs */,
 				9A5E47EF2C69729F00A75AE3 /* Info.plist */,
 				9A5E47ED2C69711300A75AE3 /* SpotifyiOS.xcframework */,
 				9F67C1062C5EEECE00EB0426 /* frontendApp.swift */,
@@ -130,6 +141,7 @@
 				9A5E47F12C69768200A75AE3 /* SpotifyController.swift */,
 				9A0B888E2C6981E5009949D8 /* AppTabBarView.swift */,
 				9A0B88902C6987A9009949D8 /* BlueButton.swift */,
+				9F7665CC2C8FFF230069EEC7 /* HomeScreen.swift */,
 			);
 			path = frontend;
 			sourceTree = "<group>";
@@ -157,6 +169,17 @@
 				9F67C1232C5EEECF00EB0426 /* frontendUITestsLaunchTests.swift */,
 			);
 			path = frontendUITests;
+			sourceTree = "<group>";
+		};
+		9F7665C32C8FE6A20069EEC7 /* navTabs */ = {
+			isa = PBXGroup;
+			children = (
+				9F7665C42C8FE6B50069EEC7 /* SongsView.swift */,
+				9F7665C62C8FE7D00069EEC7 /* AlbumsView.swift */,
+				9F7665C82C8FE7DE0069EEC7 /* ListsView.swift */,
+				9F7665CA2C8FE7EF0069EEC7 /* MembersView.swift */,
+			);
+			path = navTabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,10 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7665CB2C8FE7EF0069EEC7 /* MembersView.swift in Sources */,
+				9F7665C52C8FE6B50069EEC7 /* SongsView.swift in Sources */,
+				9F7665C72C8FE7D00069EEC7 /* AlbumsView.swift in Sources */,
 				9A5E47F22C69768200A75AE3 /* SpotifyController.swift in Sources */,
 				9A0B88912C6987A9009949D8 /* BlueButton.swift in Sources */,
 				9A0B888F2C6981E5009949D8 /* AppTabBarView.swift in Sources */,
+				9F7665CD2C8FFF230069EEC7 /* HomeScreen.swift in Sources */,
 				9F67C1312C5EEF4C00EB0426 /* LoginScreen.swift in Sources */,
+				9F7665C92C8FE7DE0069EEC7 /* ListsView.swift in Sources */,
 				9F67C1072C5EEECE00EB0426 /* frontendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
-				DEVELOPMENT_TEAM = YFGA2SW5UA;
+				DEVELOPMENT_TEAM = 87QACR36J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = frontend/Info.plist;
@@ -473,7 +501,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.frequency.frontend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frequencyfrontend.frontend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "frontend-Bridging-Header.h";
@@ -490,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
-				DEVELOPMENT_TEAM = YFGA2SW5UA;
+				DEVELOPMENT_TEAM = 87QACR36J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = frontend/Info.plist;
@@ -505,7 +533,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.frequency.frontend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frequencyfrontend.frontend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "frontend-Bridging-Header.h";

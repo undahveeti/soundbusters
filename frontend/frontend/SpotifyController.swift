@@ -18,8 +18,8 @@ final class SpotifyController: NSObject, ObservableObject, SPTAppRemoteDelegate 
     @Published var id: String = ""
     @Published var playlist: String = ""
 
-    let spotifyClientID = "1ac0e7fb407c45999920b817ca7ebc9c"
-    let spotifyRedirectURL = URL(string: "frequency://spotify-login-callback")!
+    let spotifyClientID = "4039b654d5374db99e15e74919baa2e3"
+    let spotifyRedirectURL = URL(string: "frq://spotify-login-callback")!
     lazy var configuration = SPTConfiguration(
         clientID: spotifyClientID,
         redirectURL: spotifyRedirectURL
@@ -134,7 +134,7 @@ final class SpotifyController: NSObject, ObservableObject, SPTAppRemoteDelegate 
                         let jsonResult = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
                         if jsonResult?["items"] != nil {
                             var playlists = jsonResult!["items"] as! [NSDictionary]
-                            var playlist = playlists[0]
+                            var playlist = playlists[10]
                             self.playlist = playlist["name"] as! String;
                         }
                     } catch let error {
